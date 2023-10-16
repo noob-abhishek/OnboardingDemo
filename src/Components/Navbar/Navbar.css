@@ -1,0 +1,26 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3vmax;
+    padding-right:11vmax;
+}
+.nav-items li{
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+    color: #a8864b;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-items li:hover{
+    color: #765c32;
+}
+
+.nav-items ul{
+    display: flex;
+}
+.logo{
+    padding-top: 11px;
+    height: 60px;
+    width: 100px;
+}
