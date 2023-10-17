@@ -22,7 +22,7 @@ const BlogContent = () => {
         },
         {
           "type": "paragraph",
-          "text": "Before diving into the kitchen, make sure you have the right ingredients and tools."
+          "text": "Before diving into the kitchen, make sure you have the right ingredients and tools. "
         },
         {
           "type": "subheading",
@@ -30,7 +30,7 @@ const BlogContent = () => {
         },
         {
           "type": "paragraph",
-          "text": "Start by honing your knife skills. A sharp knife is your best friend in the kitchen."
+          "text": "Start by honing your knife skills. A sharp knife is your best friend in the kitchen. You can cut everything with that... except humans. Actually you can but you dont have to.. 😓"
         },
         {
           "type": "heading",
@@ -38,7 +38,7 @@ const BlogContent = () => {
         },
         {
           "type": "paragraph",
-          "text": "Travel the world through your taste buds by exploring different cuisines."
+          "text": "Travel the world through your taste buds by exploring different cuisines. So, Ever tried maggi with ketchup?... Me Neither!"
         }
       ]
     },
@@ -52,7 +52,7 @@ const BlogContent = () => {
         },
         {
           "type": "paragraph",
-          "text": "Embark on a journey of a lifetime, filled with adventures and discoveries. The world is quite frigile place to stay, Travel more you can, Dont worry i am just writing randoms to fill this json. you don't really need to read this.... still here? .... i said you dont need to read... fine! I'll stop writing. "
+          "text": "Embark on a journey of a lifetime, filled with adventures and discoveries. The world is quite frigile place to stay, Travel more you can, Dont worry i am just writing randoms to fill this json. you don't really need to read this... "
         },
         {
           "type": "subheading",
@@ -82,7 +82,7 @@ const BlogContent = () => {
         },
         {
           "type": "paragraph",
-          "text": "If you're new to coding, don't worry. We'll guide you through the basics."
+          "text": "If you're new to coding, don't worry. We'll guide you through the basics. "
         },
         {
           "type": "subheading",
@@ -90,7 +90,7 @@ const BlogContent = () => {
         },
         {
           "type": "paragraph",
-          "text": "Select a programming language that aligns with your interests and goals."
+          "text": "Select a programming language that aligns with your interests and goals. After wasting your time on that language, start doing javaScript!!"
         },
         {
           "type": "heading",
@@ -98,7 +98,7 @@ const BlogContent = () => {
         },
         {
           "type": "paragraph",
-          "text": "Coding is a skill that improves with practice. Keep coding to get better."
+          "text": "Coding is a skill that improves with practice. Keep coding to get better. "
         }
       ]
     }
@@ -115,11 +115,11 @@ const BlogContent = () => {
       <div className="BlogBody">
         {jsonData?.content.map((item, index) => {
           if (item.type === "heading") {
-            return <h2 key={index} className="BlogHeading">{item.text}</h2>;
+            return <h2 key={index} className="BlogHeading">{item?.text}</h2>;
           } else if (item.type === "subheading") {
-            return <h3 key={index} className="BlogSubheading">{item.text}</h3>;
+            return <h3 key={index} className="BlogSubheading">{item?.text}</h3>;
           } else if (item.type === "paragraph") {
-            return <p key={index} className="BlogParagraph">{item.text}</p>;
+            return <p key={index} className="BlogParagraph">{item?.text}</p>;
           }
           return null;
         })}
