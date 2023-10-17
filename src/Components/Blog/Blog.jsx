@@ -36,17 +36,19 @@ const json = [
   
   
   return (
-    <div className="Blog">
-        {json.map((post)=>(
-            <Link to={'/BlogContent/' + post.id} key={post.id} className='link'> 
-            <BlogCard  {...post} />
-            </Link>
-        )
-        )}
+    <div className="blog-wrapper">
+      <div className="Blog">
+          {json.map((post)=>(
+              <Link to={'/BlogContent/' + post.id} key={post.id} className='link'> 
+              <BlogCard  {...post} />
+              </Link>
+          )
+          )}
 
+        
+        
       
-      
-    
+      </div>
   </div>
   )
 }

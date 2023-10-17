@@ -1,0 +1,26 @@
+.front-wrapper{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.head-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3vmax;
+    margin-top: 6vmax;
+}
+.head-img img{
+    height:  400px;
+    width: 300px;
+    padding: 20px;
+}
+
+.tagline {
+    margin-top: 14vmax;}
+
+    .tagline h1{
+        color: #a8864b;
+        
+    }

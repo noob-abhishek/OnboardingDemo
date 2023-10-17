@@ -6,6 +6,7 @@ import Blog from './Components/Blog/Blog';
 import { createBrowserRouter , RouterProvider } from "react-router-dom";
 import Home from './Components/Home/Home'
 import BlogContent from './Components/BlogContent/BlogContent';
+import About from './Components/About/About';
 const route  =  createBrowserRouter(
   [
     {
@@ -23,7 +24,11 @@ const route  =  createBrowserRouter(
     {
       path:'/BlogContent/:id',
       element: <BlogContent />
-    }]
+    },
+  {
+    path: '/about',
+    element: <About />
+  }]
     }
   ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
