@@ -7,7 +7,7 @@
 .nav-items li{
     text-decoration: none;
     list-style: none;
-    padding: 20px;
+    padding: 1.8vmax;
     color: #a8864b;
     font-size: 18px;
     font-weight: 600;
@@ -21,9 +21,73 @@
 }
 .logo{
     padding-top: 11px;
-    height: 60px;
-    width: 100px;
+    height: 5.9vmax;
+    width: 9.9vmax;
 }
 .link{
     text-decoration: none;
+}
+
+.toggle-btn{
+    display: none;
+    padding-top: 5px ;
+}
+@keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  .scale-up-center {
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  .toggle-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    padding: 2rem;
+    position: absolute;
+    z-index: 2;
+    top: 45px;
+    right: 0;
+    color: #fff;
+    margin-top: 1rem;
+    min-width: 90px;
+    border-radius: 5px;
+
+    background-color: rgba(90, 84, 84, 0.2);
+  }
+  .toggle-box li{
+    color: #fff;
+  }
+  .toggle-box .link,
+  .toggle-box .nav-item{
+    list-style: none;
+    text-decoration: none;
+  }
+
+@media screen and (max-width:550px) {
+    .nav-items li{
+        display: none;
+    }
+    .logo{
+        padding-top: 5px;
+        padding-bottom: 10px;
+        
+    }
+
+    .toggle-btn{
+        display: block;
+        padding-top: 10px ;
+    }
+    
 }

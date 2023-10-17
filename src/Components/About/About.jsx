@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css';
-import first from '../../../src/images/first.jpg'
+import first from '../../../src/images/first.jpg';
+
 const About = () => {
   return (
     <div className='front-wrapper'>
