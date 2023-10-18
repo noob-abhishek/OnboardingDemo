@@ -1,13 +1,27 @@
 
 .blog-post-card {
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 20px;
+  
+  margin: 2% 25%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
+ 
+}
+.blog-post-card:hover,
+.blog-post-card:active
+{
+  border: 1px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post-card img{
+  transition: transform .2s;
+}
+.blog-post-card img:hover{
+  transform: scale(0.9);
 }
 
 .post-image {
