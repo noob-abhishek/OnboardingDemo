@@ -2,6 +2,23 @@
 import React from 'react';
 import './Home.css';
 import first from '../../Videos/first.mp4';
+export const HomeCard =() =>{
+  return (
+    <>
+      <div className="wrapper">
+        <div className="img-wrapper">
+          <img src="" alt="people" />
+        </div>
+        <div className="card-details">
+
+          <h2 className='card-title'></h2>
+          <p className="card-content"></p>
+        </div>
+        <button className='card-btn'></button>
+      </div>
+    </>
+  );
+} 
 
 const Home = () => {
   return (
@@ -15,6 +32,10 @@ const Home = () => {
     </div>
     <div className="Services">
         <h1>Our Services</h1>
+    </div>
+
+    <div className="services-cards">
+      <HomeCard />
     </div>
     </div>
   );
