@@ -22,8 +22,8 @@ const Navbar = () => {
         </div>
         <div className='toggle-btn'>
         {Toggle
-?<RiCloseLine color='#000' size={27} onClick ={() => setToggle(false)}  /> //meri  value true hai, toggling to false.
-: <RiMenu3Line color='#000' size={27} onClick ={() => setToggle(true)} /> // meri value false hai, toggling to true.
+?<RiCloseLine color='#000' size={27} onClick ={() => setToggle(false)}  />    //meri  value true hai, toggling to false.
+: <RiMenu3Line color='#000' size={27} onClick ={() => setToggle(true)} />     // meri value false hai, toggling to true.
 }
 {Toggle && (
     <div className='toggle-box  scale-up-center '> 
